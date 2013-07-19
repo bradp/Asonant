@@ -1,0 +1,323 @@
+/*!
+Theme Name: Asonant
+Author: Brad Parbs
+Description: Asonant is a simple blogging theme for WordPress. Very clean, professional look-and-feel. Perfect for corporate blogs or just your daily thoughts.
+Tags: black, white, green, flexible-width, one-column, custom-menu, full-width-template, post-formats, sticky-post, translation-ready, threaded-comments, rtl-language-support, custom-colors
+Theme URI: http://bradparbs.com/asonant;
+Author URI: http://bradparbs.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+textdomain: asonant;
+
+asonant is based on asonant, which is based on _S ("Underscores"), Copyright (c) 2013 Brad Parbs http://bradparbs.com;
+*/
+
+/* Reset, _s, Grid System */
+@import "base/reset";
+/* #@import "base/normalize"; Uncomment and comment out the above line for normalize, instead of reset */ 
+@import "base/s";
+@import "base/foundation-grid";
+@import "base/grid-extends";
+
+
+/* Collection of Mixins */
+@import "modules/mixins/maths";
+@import "modules/mixins/shapes";
+@import "modules/mixins/misc";
+@import "modules/mixins/typography";
+
+@import "modules/mixins/media-queries";
+
+/* Variables */
+@import "modules/variables";
+
+/* General Styling */
+@import "partials/layout";
+@import "partials/typography";
+
+@import "partials/header";
+@import "partials/menus";
+@import "partials/footer";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/media";
+@import "partials/hacks";
+
+/* Page / Post / Ect - Specific */
+@import "partials/wp/404";
+@import "partials/wp/archive";
+@import "partials/wp/comments";
+@import "partials/wp/content";
+@import "partials/wp/cpt";
+@import "partials/wp/image";
+@import "partials/wp/no-results";
+@import "partials/wp/page";
+@import "partials/wp/post";
+@import "partials/wp/search";
+@import "partials/wp/sidebar";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+
+
+#main{
+	max-width: 1060px;
+}
+
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
+
+
+.color-wrapper{
+	width: 100%;
+
+}
+#header-wrapper{
+}
+
+p{
+	font-size: 1.1em;
+	line-height: 1.6em;
+	font-weight: 100;
+}
+
+.entry-title {
+	font-size: 3em;
+	text-decoration: none;
+	color: #555;
+	font-weight: 100;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.07em;
+	margin-bottom: 0em;
+}
+
+#main-nav-wrapper{
+	width: 100%;
+}
+#site-navigation{
+
+	padding-bottom: 0px;
+	margin-bottom: 20px;
+
+}
+#main-nav {
+	height: 58px;
+	font-size: 11px;
+	font-weight: bold;
+	position: relative;
+}
+
+nav{
+	.menu{
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+.site-branding{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+#colophon{
+	background-color: #EBEBEB;
+	border-top: 1px solid #F5F5F5;
+
+	color: lighten(black,10%);
+
+	a{
+		color: lighten(black,20%);
+	}
+
+	.widget-title{
+		color: lighten(black,10%);
+	}
+}
+
+#comments p{
+	font-size: .8em;
+}
+
+.comment-list{
+	list-style: none;
+
+	article{
+		background-color: rgba(197, 197, 197, 0.35);
+		margin: .3em;
+		padding: 0;
+		.comment-meta, .reply{
+			background-color: darken(rgba(197, 197, 197, 0.35),5%);
+			img{
+				margin-right: 1em;
+				margin-left: .3em;
+				margin-top: .1em;
+				border: 1px solid darken(rgba(197, 197, 197, 0.35),10%);
+				border-radius: 5px;
+			}
+			
+		}
+		.comment-content{
+			padding: .4em;
+		}
+		time{
+			font-size: .6em;
+		}
+		.reply{
+			font-size: .8em;
+			padding-left: 1em;
+		}
+	}
+}
+
+.main-navigation ul ul, .footer-navigation ul ul {
+	background-color: #146B03;
+	width: auto;
+	display: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	z-index: 900;
+	float: none;
+	height: auto;
+	-webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+	top: 56px;
+}
+
+.form-allowed-tags code{
+	font-size: .8em;
+}
+
+#mm0{
+	width: 100%;
+}
+
+.nav-previous, .nav-next{
+	width: auto !important;
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: #E2E1E1;
+	border: 1px solid #DDD;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.comments-title{
+	margin-bottom: 0;
+}
+
+#comments{
+	padding: 1em;
+	padding-bottom: .5em;
+	margin-top: 1em;
+}
+
+#respond{
+	margin-top: 2em;
+}
+
+.entry-meta{
+	font-style: italic;
+	font-size: .8em;
+}
+
+
+
+.header-img{
+	float: left;
+	max-width: 150px;
+	padding: .2em;
+	display: block;
+	margin-right: 1em;
+
+}
+.header-text{
+	float:left;
+	.entry-title{
+		margin-top: 0em;
+	}
+}
+.entry-content{
+	clear: both;
+}
+
+.entry-header{
+	margin-top: 2em;
+}
+
+.wp-caption{
+	background-color: #ccc;
+}
+
+.entry-title{
+    max-width: 1100px;
+}
+
+.sticky{display: block;}
+.gallery-caption{display: block;}
+.bypostauthor{display: block;}
+
+
+
+#main-nav-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body{
+	background: url("images/bg.png") top center repeat #DDD;
+}
+
+#main{
+	background-color: white;
+	max-width: 1100px;
+}
+
+#primary{
+	padding: 2em;
+	padding-top: 0em;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#main{
+	border: 1px solid #DCDCDC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 	5px;
+	border-radius: 			5px;
+	-webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 	0 0 0 5px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 		0 0 0 5px rgba(0, 0, 0, 0.1) inset;
+	margin-top: -1em;
+}
+
+.site-branding{
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	h1,h2{
+		float: left;
+		margin: 0;
+		width: 75%;
+	}
+	form{
+		width: 20%;
+		float: right;
+		margin-top: 2em;
+
+		input{
+			height: 2em;
+		}
+
+	}
+
+}
+
+.entry-summary{
+	clear: both;
+}
